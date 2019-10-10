@@ -1,7 +1,28 @@
-@media screen and (min-width: 40em) {
-	
-	body {
-		background-color: tomato;
-	}
-
+*{
+	font-family: 'Montserrat', sans-serif;
 }
+
+header{
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr 1fr 1fr 1fr 1fr;
+}
+
+.logo{
+	height: 3rem;
+	width: 3rem;
+	text-align: center;
+	margin: 0 auto;
+}
+h4{
+	font-size: 0.7em;
+	text-align: center;
+}
+
+.search{
+	grid-column: 2/3;
+	font-size: 1.5em;
+	border: 1px solid lightgrey;
+	box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+
