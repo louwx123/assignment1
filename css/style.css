@@ -18,6 +18,7 @@ a{
 .top{
 	display: grid;
 	grid-template-columns: 1fr 1fr 3fr 4fr;
+	margin-right: 1em;
 }
 
 .dropdown{
@@ -28,7 +29,7 @@ a{
 	background-image: url('/img/search.png');
 	background-repeat: no-repeat;
 	background-size: 1em;
-	background-position: 0.5em 0.5em;
+	background-position: 0.5em 0.7em;
 	grid-column: 2/4;
 	font-size: 1.2em;
 	border: 1px solid lightgrey;
@@ -39,7 +40,7 @@ a{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	font-size: 0.7em;
-	padding: 0;
+	padding-right:2em;
 	text-align: center;
 }
 
@@ -78,14 +79,14 @@ header{
 	position: fixed;
 	top:0;
 	left:0;
-	width:100%;
+	width:100vw;
 	background-color: white;
 	z-index: 2;
 	padding: 1em 1em 0 1em;
 }
 
 body{
-	margin-top:11em;
+	padding-top:11em;
 }
 
 .note{
@@ -99,12 +100,15 @@ body{
 h1{
 	font-size: 1.5em;
 	margin:2em 1em 1em 1em;
+	padding-left: 1em;
 }
 
 .item{
 	border: 1px solid lightgray;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
+	margin: 1em;
+	padding: 0.2em;
 	
 
 }
@@ -238,10 +242,6 @@ strong{
 		font-size: 0.7em;
 	}
 	
-
-
-
-
 }
 
 
