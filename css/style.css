@@ -2,6 +2,9 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+ul{
+	list-style-type: none;
+}
 
 a{
 	text-decoration: none;
@@ -24,6 +27,7 @@ a{
 .dropdown{
 	display: none;
 }
+
 
 .search{
 	background-image: url('/img/search.png');
@@ -124,19 +128,29 @@ h1{
 .item h3{
 	color: gray;
 	font-size: 1em;
+	padding:0.7em;
 }
 
 .item h2{
 	font-size: 1.5em;
 	line-height: 1.5em;
-	padding:0;
-	margin: 0;
+	padding-left:0.5em;
+	margin: 0em;
+}
 
+.price>h3{
+	padding: 0;
+	margin: 0;
 }
 
 .item p{
 	color:gray;
 	font-size: 0.8em;
+	padding: 1em;
+}
+
+.price>p{
+	padding:0;
 }
 
 .box{
@@ -169,11 +183,67 @@ h1{
 	position: absolute;
 	bottom:0;
 	left:0;
-	
 }
 
 strong{
 	color: black;
+}
+
+.navi{
+	margin: 1em;
+
+}
+
+.pagination{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 400px;
+	margin: 0 auto;
+	align-items: center;
+	position: relative;
+	
+}
+
+.dot1{
+	height: 25px;
+  width: 25px;
+  background-color: darkcyan;
+  border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	
+}
+
+.dot2{
+	height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	border: 1px solid black;
+
+}
+
+.liactive{
+	color: white;
+	text-align: center;
+	padding: 0.5em 0 0 0;
+}
+
+.liregular{
+	color: black;
+	text-align: center;
+	padding: 0.5em 0 0 0;
+
+}
+
+.next{
+	color: darkcyan;
+	text-align: center;
+	padding: 0.5em 0 0 0;
 }
 @media (max-width: 768px){
 	.top{
@@ -187,18 +257,23 @@ strong{
 		width:20px;
 		margin:auto 0;
 	}
+
 	.topbar{
 		display: none;
 	}
+
 	.search{
 		font-size: 1em;
+		width: 70%;
 		max-width: 400px;
 		background-position: 0.5em 1em;
 		grid-column: 3/4;
 	}
+
 	#btn4, #btn5{
 		display: none;
 	}
+
 	.item{
 		display: block;
 		position: relative;
@@ -210,25 +285,31 @@ strong{
 		padding: 0 auto;
 		border: none;
 	}
+
 	.heart{
 		display: none;
 	}
+
 	.rate{
 		display: inline;
 		position: relative;
 	}
+
 	.price{
-		display: flex;
+		display: flex;	
 		position: relative;
-		left:0;
 		text-align: left;
-		line-height: 0em;
+		line-height: 1em;
+		margin-left:0.7em;
 	}
 
-	.price>h2{
-		font-size:0.8em;
+	.price>h3{
+		font-size:0.5em;
 	}
 
+	.price>p{
+		margin: 1.7em 0 0 1em;
+	}
 
 
 }
