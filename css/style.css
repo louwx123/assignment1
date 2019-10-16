@@ -167,6 +167,14 @@ h1{
 	width: 2em;
 	border: none;
 }
+
+.heartred{
+	height:3em;
+	width: 3em;
+	margin-top:0.5em;
+	margin-right:0.5em;
+
+}
 .price{
 	position: absolute;
 	bottom:0;
