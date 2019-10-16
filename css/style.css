@@ -48,6 +48,9 @@ a{
 	text-align: center;
 }
 
+.menu{
+	display: none;
+}
 .filter{
 	border-top: 1px solid lightgray;
 	border-bottom: 1px solid lightgray;
@@ -116,6 +119,7 @@ h1{
 	
 
 }
+
 
 .item>img{
 	height:300px;
@@ -278,6 +282,10 @@ padding:1em;
 
 
 @media (max-width: 768px){
+
+	body{
+		padding-top: 12em;
+	}
 	.top{
 		display: grid;
 		grid-template-columns: 1fr 1fr 10fr;
@@ -288,6 +296,9 @@ padding:1em;
 		height: 20px;
 		width:20px;
 		margin:auto 0;
+	}
+	.arrow{
+		position: relative;
 	}
 
 	.topbar{
@@ -300,6 +311,21 @@ padding:1em;
 		max-width: 400px;
 		background-position: 0.5em 1em;
 		grid-column: 3/4;
+	}
+
+
+	.menu{
+		display: inline-block;
+		position: relative;
+		padding:1em;
+		z-index: 2;
+		
+	}
+
+	.menu li{
+		line-height: 2em;
+		margin: 1em 0;
+		color: black;
 	}
 
 	#btn4, #btn5{
@@ -319,8 +345,11 @@ padding:1em;
 	}
 
 	.heart{
-		display: none;
-	}
+		
+		position: absolute;
+		right: 0;
+		top: -1em;
+	} 
 
 	.rate{
 		display: inline;
