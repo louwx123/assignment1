@@ -51,6 +51,7 @@ a{
 .menu{
 	display: none;
 }
+
 .filter{
 	border-top: 1px solid lightgray;
 	border-bottom: 1px solid lightgray;
@@ -297,9 +298,7 @@ padding:1em;
 		width:20px;
 		margin:auto 0;
 	}
-	.arrow{
-		position: relative;
-	}
+
 
 	.topbar{
 		display: none;
@@ -317,8 +316,10 @@ padding:1em;
 	.menu{
 		display: inline-block;
 		position: relative;
-		padding:1em;
+		padding:0 1em;
+		margin: 0;
 		z-index: 2;
+		line-height: 0.6em;
 		
 	}
 
